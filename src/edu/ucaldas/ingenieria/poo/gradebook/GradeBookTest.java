@@ -11,7 +11,7 @@ public class GradeBookTest {
 			Scanner sc = new Scanner(System.in);
 			
 			Gradebook gradebook = new Gradebook();
-			Gradebook gradebookProgramacionOO = new Gradebook("Programacion Orientada a Objetos ");
+			Gradebook gradebookProgramacion = new Gradebook("Programacion Orientada a Objetos ");
 			
 			gradebook.determimeClassAveriguar();
 			

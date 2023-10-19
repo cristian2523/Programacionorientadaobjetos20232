@@ -36,18 +36,27 @@ public class Gradebook {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int total = 0, grade, gradeCounter = 1, average;
+		int total = 0;
+		int grade; 
+		int gradeCounter = 1;
+		int average = 0; 
 		
-		while (gradeCounter <= 5) {
-			System.out.println(" Por favor ingresar grado");
+			System.out.println(" ingrese la nota o -1 para salir");
 			grade = sc.nextInt();
+			
+			while (grade != -1)  {
 			total = total + grade;
 			gradeCounter = gradeCounter + 1;
 			
+			System.out.println(" ingrese la tecla -1 para salir");
+			grade = sc.nextInt();
+		}
+		if (gradeCounter !=0) {
+			average = total/gradeCounter;
 		}
 		
-		average = total/5;
-		System.out.println("El promedio de las notas son "+ average);
+		System.out.println("El promedio total de la nota es " + average);
 			
 	}
 }
+
